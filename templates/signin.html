@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="#" method="post">
+<p ><strong><span style="background-color: rgb(250, 197, 28); color: rgb(40, 50, 78); font-size: 60px;">&nbsp;الاسم الكريم&nbsp;</span></strong></p>
+
+<table>
+   <tr>
+     <td align="center">
+        <p> <input class="center-block" type="text" name="nm" /></p>
+        <p> <input class="center-block" type="submit" name="submit" /></p>
+     </td>
+   </tr>
+</table>
+
+</form>
+<p style="text-align: center;"><span style="font-family: 'Aref Ruqaa', serif;"><br></span></p>
+__________________________________________________________
+
+
+
+
+<p style="text-align: center;"><span style="font-family: 'Aref Ruqaa', serif;"><br></span></p>
+<p style="text-align: center;"><span style="font-family: 'Aref Ruqaa', serif;"><br></span></p>
+<p ><strong><span style="background-color: rgb(250, 197, 28); color: rgb(40, 50, 78); font-size: 60px;">&nbsp;حاسبة&nbsp;</span></strong></p>
+
+    <input type="text" id="Num1" value="0" onblur="reSum();"/>
+
+    <input type="text" id="Num2" value="0" onblur="reSum();"/> <br>
+    <p>المجموع :</p>
+
+    <input type="text" id="Sum" value=""/>
+    <script>
+
+        function reSum()
+        {
+            var num1 = parseInt(document.getElementById("Num1").value);
+            var num2 = parseInt(document.getElementById("Num2").value);
+            document.getElementById("Sum").value = num1 + num2;
+
+        }
+__________________________________________________________
+
+<html>
+{{ this_is_my_variable_that_is_passed_to_my_view }}
+</html>
+    </script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
